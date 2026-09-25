@@ -1,14 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="$CONTROLLER_NAME$"
-            prefHeight="400.0" prefWidth="600.0" >
-
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.ezone.pae.proyectoconexionbdg3.Controllers.PrincipalController">
+    <children>
+        <Button fx:id="btnConexion" layoutX="249.0" layoutY="147.0" mnemonicParsing="false" onAction="#probarConexion" text="Probar conexión" />
+        <Label layoutX="225.0" layoutY="84.0" text="Práctica de conexión con BD" />
+        <Label fx:id="lblEstado" layoutX="249.0" layoutY="254.0" prefHeight="20.0" prefWidth="126.0" textAlignment="CENTER">
+         <font>
+            <Font name="Agency FB Bold" size="14.0" />
+         </font></Label>
+      <Button fx:id="btnListaEstudiantes" layoutX="240.0" layoutY="187.0" mnemonicParsing="false" onAction="#obtenerEstudiantes" text="Lista de estudiantes" />
+    </children>
 </AnchorPane>
